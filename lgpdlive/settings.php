@@ -37,10 +37,10 @@ if ($ADMIN->fulltree) {
                                              1);
     $settings->add($item);
 
-    $defaultRegexPatterns = "Email: /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/\n" . // Email
-                            "Phone (Brazil): /(?:\+\s*55\s*)?\d{2}\s*\d{4,5}\s*\d{4}/\n" .         // Phone (Brazil example)
-                            "CPF (Brazil): /\d{3}[\.]?\d{3}[\.]?\d{3}[-]?\d{2}/\n" .            // CPF (Brazil example)
-                            "CEP (Brazil): /\d{5}[-]?\d{3}/"; 
+    $defaultRegexPatterns = "EMAIL::/[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/\n" . // Email
+                            "PHONE::/(?:\+\s*55\s*)?\d{2}\s*\d{4,5}\s*\d{4}/\n" .         // Phone (Brazil example)
+                            "CPF::/\d{3}[\.]?\d{3}[\.]?\d{3}[-]?\d{2}/\n" .            // CPF (Brazil example)
+                            "CEP::/\d{5}[-]?\d{3}/";
     $item = new admin_setting_configtextarea('filter_lgpdlive/customregexlist',
                                              new lang_string('customregexlist', 'filter_lgpdlive'),
                                              new lang_string ('customregexlist_desc', 'filter_lgpdlive'),
