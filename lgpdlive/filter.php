@@ -192,7 +192,6 @@ class filter_lgpdlive extends moodle_text_filter {
                         {
                             $check_array = $this->cpf_validator($match[0]);
                             if($check_array[0] == true){
-                                print_object('CPF válido: ' . $match[0]);
                                 $replacementCPF = sprintf(
                                     '***.%s%s%s.***-**',
                                     $check_array[1],
